@@ -74,3 +74,16 @@ var romanNumeral = function(number) {
 
     return answer.join("");
 }
+
+$(document).ready(function() {
+    $("form#roman").submit(function(event) {
+        var number = parseInt($("input#number").val());
+
+        var result = romanNumeral(number);
+        $(".result-roman").text(result);
+
+        $("#result").show();
+        event.preventDefault();
+
+    });
+});
