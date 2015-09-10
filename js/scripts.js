@@ -15,8 +15,11 @@ var romanNumeral = function(number) {
             number -= values[i];
         }
     }
+    // ^^^This
 
-    // ^^^This does the same thing as    VVV This!
+    //does the same thing as
+    
+    // VVV This!
 
     // while (number >= 1000) {
     //     answer.push(symbols[0]);
